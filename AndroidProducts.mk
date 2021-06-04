@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2019-2022 The Evolution X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_kebab.mk
+    $(LOCAL_DIR)/evolution_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_kebab-user \
-    lineage_kebab-userdebug \
-    lineage_kebab-eng
+    evolution_kebab-user \
+    evolution_kebab-userdebug \
+    evolution_kebab-eng
