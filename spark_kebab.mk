@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
-# Copyright (C) 2019-2022 The Evolution X Project
+# Copyright (C) 2019-2022 The spark X Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,15 +22,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kebab device
 $(call inherit-product, device/oneplus/kebab/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common spark X stuff.
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GAPPS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_ADAPTIVE_CHARGING := true
 
-PRODUCT_NAME := evolution_kebab
+PRODUCT_NAME := spark_kebab
 PRODUCT_DEVICE := kebab
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
